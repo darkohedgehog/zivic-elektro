@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Banner from "@/components/Banner";
+
 
 export default function Home() {
   return (
    <main>
-    <h1>New ecommerce website</h1>
+    <Banner />
    </main>
   )
 }
