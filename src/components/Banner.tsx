@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { sliderOne, sliderTwo, sliderThree } from "@/assets";
 import Image from "next/image";
-import { Clock, Smartphone, Map, MailPlus } from "lucide-react";
+import { Clock, Smartphone, Truck, MailPlus } from "lucide-react";
 
 const Banner = () => {
   const [dotActive, setDotActive] = useState(0);
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
@@ -139,29 +139,29 @@ const Banner = () => {
         <div className="flex items-center gap-5 w-60">
           <Clock className="text-designColor w-8 h-8" />
           <div>
-            <p>Saturday - Thursday</p>
-            <p className="font-semibold">7:00 - 20:00</p>
+            <p>Ponedjeljak - Petak</p>
+            <p className="font-semibold">7:30 - 19:30</p>
           </div>
         </div>
         <div className="flex items-center gap-5 w-60">
           <Smartphone className="text-designColor w-8 h-8" />
           <div>
-            <p>+ 018 0000 0000</p>
-            <p className="font-semibold">Order by Phone</p>
+            <p>+ 385 32 442 992</p>
+            <p className="font-semibold">Pozovite nas</p>
           </div>
         </div>
         <div className="flex items-center gap-5 w-60">
-          <Map className="text-designColor w-8 h-8" />
+          <Truck className="text-designColor w-8 h-8" />
           <div>
-            <p>Mirpur, Dhaka</p>
-            <p className="font-semibold">Address</p>
+            <p>Dostava za sve</p>
+            <p className="font-semibold"> iznose 4,00€</p>
           </div>
         </div>
         <div className="flex items-center gap-5 w-60">
           <MailPlus className="text-designColor w-8 h-8" />
           <div>
-            <p>Get an invoice</p>
-            <p className="font-semibold">Email us</p>
+            <p>Pošaljite upit</p>
+            <p className="font-semibold">Email</p>
           </div>
         </div>
       </div>
