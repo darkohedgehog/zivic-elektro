@@ -120,7 +120,7 @@ const Cart = () => {
                       />
                       <Image
                         src={item?.image}
-                        alt="proudct image"
+                        alt="product image"
                         width={500}
                         height={500}
                         className="w-24 object-contain"
