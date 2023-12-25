@@ -1,12 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: [
-        "i.ibb.co",
-        "lh3.googleusercontent.com",
-        "avatars.githubusercontent.com",
-      ],
-    },
-  };
-  
-  module.exports = nextConfig;
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        pathname: '**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        pathname: '**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+        pathname: '**'
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
