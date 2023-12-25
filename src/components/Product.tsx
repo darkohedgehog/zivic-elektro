@@ -64,13 +64,13 @@ const Product = ({ products }: Item) => {
                 }}
                 className="uppercase font-semibold hover:text-designColor duration-300"
               >
-                Add to cart
+                Dodaj u košaricu
               </button>
               <Link
                 className="uppercase font-semibold hover:text-designColor duration-300"
                 href={{ pathname: `/${item?._id}`, query: { _id: item?._id } }}
               >
-                More Info
+                Više...
               </Link>
             </div>
           </div>
